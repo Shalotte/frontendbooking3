@@ -1,0 +1,19 @@
+<app-customer-header></app-customer-header>
+
+<div *ngFor="let listproperty of listproperty; let i=index">
+<div class="flightCards">
+    <div class="onwardDetails">
+      <h1>{{listproperty.property_name}}</h1>
+      <h4><strong>Number of guests:</strong>{{listproperty.guests}} or more</h4>
+      <h4><strong>Available rooms:</strong>{{listproperty.number_of_bedrooms}}</h4>
+      <h4><strong>Property manager:</strong>{{listproperty.property_manager_name}}</h4>
+      <h4><strong>Contact details:</strong>{{listproperty.property_manager_contact_details}}</h4>
+    </div>
+    <div class="booking">
+      <img class="bookingImage"  [src]="images[i]" height="150" width="150">
+      <button routerLink='/booking'>Make Reservation</button>
+    </div>
+
+    </div>
+
+

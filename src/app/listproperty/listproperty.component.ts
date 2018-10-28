@@ -42,6 +42,11 @@ ngOnInit() {
 
 
   processProperty(){
+<<<<<<< HEAD
+=======
+
+    if(this.user.id==undefined){
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
   this._listpropertyService.createProperty(this.user.id,this.listproperty).
   subscribe(data =>{console.log(data);
   this.listproperty= new Listproperty();
@@ -64,13 +69,33 @@ ngOnInit() {
     this.listpExist=true;
   
     if(this.listpExist=true){
+<<<<<<< HEAD
       alert('Property with this email address already exists.')
+=======
+      alert('User with this email address already exists.')
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
       }
     }
     
   console.log(error)
   }
   );
+<<<<<<< HEAD
 
+=======
+  }
+else{
+  this._listpropertyService.updateProperty(this.user.id,this.property).subscribe((property)=>{
+    console.log(property);
+    this._router.navigate(['/listpropertydisplay']);
+    },(error)=>{
+    console.log(error);
+    });
+
+}
+
+this._listpropertyService.getProperty(this.user.id);
+this._router.navigate(['/listpropertydisplay'])
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
 }
 }

@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from '../user';
+<<<<<<< HEAD
 import {BookingService} from '../shared_services/booking.service';
 import {Customerdetails} from '../customerdetails';
 import { Router } from '@angular/router';
+=======
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
 
 @Component({
   selector: 'app-listbookings',
@@ -11,12 +14,17 @@ import { Router } from '@angular/router';
 })
 export class ListbookingsComponent implements OnInit {
   user: User;
+<<<<<<< HEAD
   public customerdetails: Customerdetails[];
   constructor(private bookingService:BookingService, private _router: Router) { 
+=======
+  constructor() { 
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
     this.user = JSON.parse(localStorage.getItem('user'));
   }
 
   ngOnInit() {
+<<<<<<< HEAD
 
     this.bookingService.getBooking(this.user.id).subscribe((data: any)=>{console.log(data);
       this.customerdetails=data;
@@ -41,6 +49,8 @@ export class ListbookingsComponent implements OnInit {
  }
     
     })
+=======
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
   }
 
 }

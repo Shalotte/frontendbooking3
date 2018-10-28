@@ -49,8 +49,11 @@ import { BookingService } from './shared_services/booking.service';
 import { SearchBoxComponent } from './search-box/search-box.component';
 import { AccomodationCardComponent } from './accomodation-card/accomodation-card.component';
 import { PaymentService } from './shared_services/payment.service';
+<<<<<<< HEAD
 import { UpdatePropertyComponent } from './update-property/update-property.component';
 import { UpdateBookingComponent } from './update-booking/update-booking.component';
+=======
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
  
 
 const appRoutes:Routes=[
@@ -74,6 +77,11 @@ const appRoutes:Routes=[
   {path:'filelayout',component:FilelayoutComponent },
   {path:'booking',component:BookingComponent  },
   {path:'destinations',component:DestinationsComponent },
+<<<<<<< HEAD
+=======
+  {path:'booking',component:BookingComponent  },
+  {path:'destinations',component:DestinationsComponent },
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
   {path:'imageupload',component:UploadImageComponent },
   {path:'user1',component:UserComponent },
   {path:'header_layout',component:HeaderLayoutComponent },
@@ -83,11 +91,14 @@ const appRoutes:Routes=[
   {path: 'foundProperty',component:FoundDestinationsComponent},
   {path: 'searchbox',component:SearchBoxComponent},
   {path: 'payment',component:PaymentComponent},
+<<<<<<< HEAD
   {path: 'update_property',component:UpdatePropertyComponent},
   {path: 'update_booking',component:UpdateBookingComponent},
 
   
   
+=======
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
  
 
   
@@ -133,8 +144,11 @@ const appRoutes:Routes=[
     ListdestinationsComponent,
     SearchBoxComponent,
     AccomodationCardComponent,
+<<<<<<< HEAD
     UpdatePropertyComponent,
     UpdateBookingComponent,
+=======
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
     
   ],
 

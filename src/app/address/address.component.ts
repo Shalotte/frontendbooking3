@@ -20,6 +20,7 @@ constructor(private bookingService: BookingService) { }
 ngOnInit() {
 }
 
+<<<<<<< HEAD
 //createBooking(){
 //this.bookingService.createBooking(this.customerdetails).subscribe((data)=>{
 //console.log(data);
@@ -27,4 +28,13 @@ ngOnInit() {
 //}
 //)
 //}
+=======
+createBooking(){
+this.bookingService.createBooking(this.customerdetails).subscribe((data)=>{
+console.log(data);
+
+}
+)
+}
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
 }

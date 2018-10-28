@@ -1,9 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from '../user';
+<<<<<<< HEAD
 import {Listproperty} from '../listproperty';
 import { BookingService } from '../shared_services/booking.service';
 import { Customerdetails } from '../customerdetails';
 import {Router} from '@angular/router';
+=======
+import { BookingService } from '../shared_services/booking.service';
+import { Customerdetails } from '../customerdetails';
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
 
 @Component({
   selector: 'app-booking',
@@ -11,6 +16,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./booking.component.scss']
 })
 export class BookingComponent implements OnInit {
+<<<<<<< HEAD
 private user: User;
 private properties:Listproperty[];
 private property:Listproperty;
@@ -26,12 +32,20 @@ constructor(private bookingService:BookingService, private _router: Router) {
  this.user = JSON.parse(localStorage.getItem('user'));
   this.properties = JSON.parse(localStorage.getItem('properties'));
   
+=======
+private customerdetails = new Customerdetails();
+user: User;
+
+constructor(private bookingService:BookingService) {
+this.user = JSON.parse(localStorage.getItem('user'));
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
 }
 
 ngOnInit() {
 }
 
 createBooking(){
+<<<<<<< HEAD
   this.bookingService.createBooking(this.user.id,this.properties[0].id,this.customerDetails).subscribe((data)=>{
   console.log(data)
   this.customerDetails= new Customerdetails();
@@ -60,4 +74,11 @@ createBooking(){
 
 
 
+=======
+this.bookingService.createBooking(this.customerdetails).subscribe((data)=>
+{console.log(data)}
+)
+}
+
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
 }

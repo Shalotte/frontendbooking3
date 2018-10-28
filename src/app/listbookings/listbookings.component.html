@@ -7,6 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
     </ul>
+<<<<<<< HEAD
      <div class="dropdown">
     <button class="btn btn-primary" type="button">Manage Account</button>
        <ul class="dropdown-content">
@@ -16,6 +17,12 @@
     <ul class="nav navbar-nav navbar-right">
             <div class="a">
                 <button class="btn btn-primary" type="button" routerLink="/custlayout">Home</button>
+=======
+    <ul class="nav navbar-nav navbar-right">
+            <div class="a">
+                <button type="button" class="btn btn-primary" routerLink="/custlayout">Home</button>
+                <button class="btn btn-primary" type="button" routerLink="/listpropertydisplay">Listed Property</button>
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
                 <button type="button" class="btn btn-primary" routerLink="/header_layout">Log Out</button>
             </div>
     </ul>
@@ -25,7 +32,11 @@
   
   
     <div class="container">
+<<<<<<< HEAD
         <h2>Bookings List</h2>
+=======
+        <h2>Your Bookings List</h2>
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
         <p>Hey {{user.first_name}}, below are all the bookings you have made!</p>    
         <div class="table-responsive">                                                                                        
         <table class="table">
@@ -41,6 +52,7 @@
               <th>Zip Code</th>
               <th>Country</th>
               <th>Telephone</th>
+<<<<<<< HEAD
               <th>Cancel</th>
               <th>Edit</th>
             </tr>
@@ -64,3 +76,42 @@
         </table>
         </div>
         
+=======
+              <th>Card Holder Name</th>
+              <th>Card Type</th>
+              <th>Card Number</th>
+              <th>Expiry Date</th>
+              <th>cvc</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let properties of properties">
+              <td>{{properties.id}}</td>
+              <td>{{properties.property_name}}</td>
+              <td>{{properties.property_manager_name}}</td>
+              <td>{{properties.property_manager_contact_details}}</td>
+              <td>{{properties.property_street_address}}</td>
+              <td>{{properties.property_city_name}}</td>
+              <td>{{properties.property_country_name}}</td>
+              <td>{{properties.zip_code}}</td>
+              <td>{{properties.email}}</td>
+              <td>{{properties.apartment_type}}</td>
+              <td>{{properties.number_of_bedrooms}}</td>
+              <td>{{properties.number_of_living_rooms}}</td>
+              <td>{{properties.number_of_bathrooms}}</td>
+              <td>{{properties.price_per_night}}</td>
+              <td>{{properties.internet_available}}</td>
+              <td>{{properties.free_internet}}</td>
+              <td>{{properties.parking_available}}</td>
+              <td>{{properties.language_spoken}}</td>
+              <td>{{properties.smoking_allowed}}</td>
+              <td>{{properties.children_accommodated}}</td>
+              <td>{{properties.spets_allowed}}</td>
+              <td>{{properties.minimum_stay}}</td>
+              <td>{{properties.payment_method}}</td>
+              <td>{{properties.cleaning_fees}}</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473

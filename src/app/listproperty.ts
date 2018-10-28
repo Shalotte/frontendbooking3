@@ -11,7 +11,10 @@ export class Listproperty {
     email: string;
     apartment_type: string;
     number_of_bedrooms: number;
+<<<<<<< HEAD
     guests: number;
+=======
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
     number_of_living_rooms: number;
     number_of_bathrooms: number;
     price_per_night: number;
@@ -24,8 +27,11 @@ export class Listproperty {
     minimum_stay: number;
     payment_method: string;
     cleaning_fees: string;
+<<<<<<< HEAD
     destination: string;
     rooms: number;
 
+=======
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
 
 }

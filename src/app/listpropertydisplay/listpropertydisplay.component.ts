@@ -35,11 +35,14 @@ ngOnInit() {
   )
   }
 
+<<<<<<< HEAD
   updateUser(properties){
     this._listpropertyService.setter(properties);
     this._router.navigate(['/update_property']);
     }
 
+=======
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
   deleteProperty(properties){
     this._listpropertyService.deleteProperty(properties.id).subscribe((data)=>{
       //this.properties.splice(this.properties.indexOf(properties,1));
@@ -57,11 +60,19 @@ ngOnInit() {
   }
 
  
+<<<<<<< HEAD
  
    // updateProperty(property){
      // this._listpropertyService.setter(property);
       //this._router.navigate(['/update_property']);
       //}
+=======
+
+    updateProperty(property){
+      this._listpropertyService.setter(property);
+      this._router.navigate(['/listproperty']);
+      }
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
       
     
   

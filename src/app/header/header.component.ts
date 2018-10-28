@@ -56,9 +56,14 @@ import { AlertService} from '../shared_services/alert.service';
   this.userError= new User();
 
   if(this.isCreated=true){
+<<<<<<< HEAD
   alert('Your registration was successful, you can now login.');
   this._router.navigate(['header_layout']);
   location.reload();
+=======
+  alert('Your registration was successful, you can now login.')
+  this._router.navigate(['header_layout']);
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
   }
    
   }

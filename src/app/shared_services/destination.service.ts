@@ -30,7 +30,12 @@ showResults()
 }
 
 search_Destination(destination: string, rooms: number, guests: number){
+<<<<<<< HEAD
   return this._http.get(this.baseUrl+'/search/destination/'+destination+'/'+guests+'/'+ rooms, this.options).pipe(map((response: Response) => response.json()))
+=======
+  return this._http.get(this.baseUrl+'/search/destination/'+destination+'/'+guests+'/'+
+'/'+ rooms, this.options).pipe(map((response: Response) => response.json()))
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
 }
 
   

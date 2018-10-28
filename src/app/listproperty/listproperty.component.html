@@ -19,12 +19,20 @@
              </ul>
        </div>
        <button class="btn btn-primary" type="button" routerLink="/custlayout">Home</button>
+<<<<<<< HEAD
        <button class="btn btn-primary" type="button" routerLink="/header_layout">Log Out</button>
+=======
+       <button class="btn btn-primary" type="button" routerLink='/header_layout'>Log Out</button>
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
   </div>
 </nav>
 
 <div class="jumbotron">
+<<<<<<< HEAD
   <h3>Hey {{user.first_name}}, you can list your property below!</h3>
+=======
+  <h3>Welcome {{user.first_name}}, you can list your property below!</h3>
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
 </div>
 
 <form (ngSubmit)="processProperty()">
@@ -110,11 +118,14 @@
             <span class="text text-danger">{{listpError.apartment_type}}</span>
             </div>
           <small class="form-text text-muted">Give a brief description of your property e.g. Apartment with Balcony.</small>
+<<<<<<< HEAD
           <label for="no_living">Number of Guests Accommodated</label>
           <input type="text" class="form-control"  name="guests"   [(ngModel)]="listproperty.guests">
           <div class="col-10" *ngIf="listpError?.guests">
             <span class="text text-danger">{{listpError.guests}}</span>
             </div>
+=======
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
           <label for="no_living">Number of Bedrooms</label>
           <input type="text" class="form-control"  name="number_of_bedrooms"   [(ngModel)]="listproperty.number_of_bedrooms">
           <div class="col-10" *ngIf="listpError?.number_of_bedrooms">

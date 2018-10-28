@@ -3,8 +3,11 @@ import {User} from '../user';
 import { BookingService } from '../shared_services/booking.service';
 import { Customerdetails } from '../customerdetails';
 import {Router} from '@angular/router';
+<<<<<<< HEAD
 import {Listproperty} from '../listproperty';
 
+=======
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
 
 @Component({
   selector: 'bookingdetails',
@@ -19,8 +22,12 @@ export class DetailsComponent implements OnInit {
   public bookingError = new User();
   public isCreated: boolean= false;
   public bookingExist: boolean=false;
+<<<<<<< HEAD
   listproperty:Listproperty;
 
+=======
+ 
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
   constructor(private bookingService:BookingService, private _router: Router) { 
   this.user = JSON.parse(localStorage.getItem('user'));
   }
@@ -29,7 +36,11 @@ export class DetailsComponent implements OnInit {
   }
   
   createBooking(){
+<<<<<<< HEAD
     this.bookingService.createBooking(this.user.id,this.listproperty.id,this. customerDetails).subscribe((data)=>{
+=======
+    this.bookingService.createBooking(this.customerDetails).subscribe((data)=>{
+>>>>>>> e1484a661bdc2a19a365017ff6d1548da096a473
     console.log(data)
     this.customerDetails= new Customerdetails();
     this.isCreated=true;
